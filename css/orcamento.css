@@ -20,8 +20,8 @@
   grid-template-columns: 1fr 1fr;
   align-content: start;
   gap: 20px;
-  background: var(--cor-12) url(./img/dec/bottom-left.svg) no-repeat bottom 20px
-    left 20px;
+  background: var(--cor-12) url(../img/dec/bottom-left.svg) no-repeat bottom
+    20px left 20px;
 }
 
 @media (max-width: 1200px) {
@@ -174,8 +174,8 @@ img[src$=".jpg"] {
 
 .orcamento-dados {
   border-radius: 0 5px 5px 0;
-  background: var(--cor-0) url(./img/dec/bottom-right.svg) no-repeat bottom 20px
-    right 20px;
+  background: var(--cor-0) url(../img/dec/bottom-right.svg) no-repeat bottom
+    20px right 20px;
 }
 
 .form .col-2 {

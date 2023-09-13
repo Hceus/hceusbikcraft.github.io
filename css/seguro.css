@@ -1,6 +1,6 @@
 .seguros-bg {
-  background: var(--cor-11) url(./img/dec/bottom-left.svg) no-repeat bottom 40px
-    left 20px;
+  background: var(--cor-11) url(../img/dec/bottom-left.svg) no-repeat bottom
+    40px left 20px;
 }
 
 .titulo {
@@ -9,7 +9,7 @@
 }
 
 .titulo div {
-  background: url(./img/dec/top-right.svg) no-repeat top right 20px;
+  background: url(../img/dec/top-right.svg) no-repeat top right 20px;
 }
 
 .titulo p {
@@ -38,11 +38,16 @@
   }
 }
 
-.seguros {
+.seguro2 {
   padding-top: 0px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.seguros-item {
+.seguros2-item {
   display: grid;
   grid-template-columns: 1fr auto;
   padding: 32px 32px 32px 60px;
@@ -50,14 +55,14 @@
   background-color: var(--cor-12);
 }
 
-.seguros-item h3 {
+.seguros2-item h3 {
   margin-bottom: 40px;
   color: var(--cor-6);
   font: 600 2rem/1.25 "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
-.seguros-item span {
+.seguros2-item span {
   grid-column: 2;
   display: block;
   text-align: right;
@@ -65,40 +70,40 @@
   font: 600 2rem/1.25 "Poppins", sans-serif;
 }
 
-.seguros-item .mensal {
+.seguros2-item .mensal {
   color: var(--cor-6);
   font: 500 0.75rem/1.35 "Poppins", sans-serif;
 }
 
-.seguros-item ul {
+.seguros2-item ul {
   grid-column: 1/-1;
   color: var(--cor-0);
   font: 500 1.125rem/1.35 "Roboto", sans-serif;
   margin-bottom: 32px;
 }
 
-.seguros-item li {
+.seguros2-item li {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.seguros-item li::before {
+.seguros2-item li::before {
   content: "";
   position: absolute;
   left: -21px;
   width: 13px;
   height: 9px;
-  background-image: url(./img/icones/lista.svg);
+  background-image: url(../img/icones/lista.svg);
 }
 
-.seguros-item li + li {
+.seguros2-item li + li {
   margin-top: 20px;
 }
 
 .vantagens-bg {
-  background: url(./img/dec/bottom-left.svg) no-repeat bottom 40px left 20px,
-    url(./img/dec/bottom-right.svg) no-repeat bottom 40px right 20px,
+  background: url(../img/dec/bottom-left.svg) no-repeat bottom 40px left 20px,
+    url(../img/dec/bottom-right.svg) no-repeat bottom 40px right 20px,
     var(--cor-12);
 }
 
@@ -190,7 +195,7 @@
   display: block;
   width: 14px;
   height: 6px;
-  background: url(./img/icones/seta-abrir.svg) no-repeat right;
+  background: url(../img/icones/seta-abrir.svg) no-repeat right;
   transition: 0.3s;
   transform: rotate(180deg);
 }
