@@ -1,0 +1,26 @@
+.titulo {
+  padding: 60px 0;
+  background: var(--cor-11);
+}
+
+.termos {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  color: var(--cor-9);
+}
+
+.termos h2 {
+  color: var(--cor-11);
+  margin-bottom: 20px;
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.termos p {
+  max-width: 75ch;
+  margin-bottom: 24px;
+}
+
+.termos p + h2 {
+  margin-top: 48px;
+}

@@ -1,0 +1,420 @@
+.intro-bg {
+  background: var(--cor-12) url(./img/dec/bottom-left.svg) no-repeat bottom 40px
+    left 20px;
+  box-shadow: inset 0 -120px var(--cor-0);
+}
+
+.container-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.intro {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.container-intro h1 {
+  color: var(--cor-0);
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+  margin-bottom: 32px;
+}
+
+.cor-p1 {
+  color: var(--cor-p1);
+}
+
+.texto1 {
+  color: var(--cor-5);
+  padding-bottom: 20px;
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+  margin: 0;
+}
+
+.container-intro img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  max-width: 100%;
+  display: block;
+}
+
+.bicicletas-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.bicicletas-lista h2 {
+  margin-bottom: 20px;
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .bicicletas-lista h2 {
+    font-size: 3rem;
+  }
+}
+
+.bicicletas-lista ul {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+  gap: 40px;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.bicicletas-lista li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.bicicletas-lista img {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bicicletas-lista a {
+  color: var(--cor-12);
+  display: block;
+}
+
+.bicicletas-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.bicicletas-lista a:hover h3::before {
+  width: 24px;
+}
+
+.bicicletas-lista h3::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.bicicletas-lista li span {
+  padding-left: 20px;
+  color: var(--cor-8);
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.tec-bg {
+  background: var(--cor-12);
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-0);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecno-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.avançado {
+  color: var(--cor-5);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .avançado {
+    font-size: 1.125rem;
+  }
+}
+
+.tecno-conteudo h2 {
+  margin-bottom: 32px;
+  color: var(--cor-0);
+  font: 600 4/1.125 "Poppins", sans-serif;
+  line-height: 1.125;
+}
+
+@media (max-width: 1200px) {
+  .tecno-conteudo h2 {
+    font-size: 3rem;
+  }
+}
+
+.tecno-texto {
+  margin-bottom: 20px;
+  color: var(--cor-5);
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .tecno-texto {
+    font-size: 1.125rem;
+  }
+}
+
+.tecno-conteudo a {
+  margin-bottom: 80px;
+}
+
+.link {
+  display: inline-block;
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  color: var(--cor-p1);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--cor-1);
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+  position: absolute;
+  margin-top: 4px;
+}
+
+.tecno {
+  display: flex;
+  gap: 40px;
+}
+.tecno img {
+  width: 24px;
+  margin-bottom: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tecno h3 {
+  margin-bottom: 8px;
+  width: max-content;
+  color: var(--cor-0);
+  font: 500 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.tecno p {
+  color: var(--cor-5);
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.tecno-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 4px;
+  display: block;
+}
+
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros h2 {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 60px;
+  font-size: 3rem;
+}
+
+.parceiros ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.parceiros li {
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--cor-2);
+  justify-content: center;
+}
+
+.parceiros li:first-child,
+.parceiros li:nth-child(5) {
+  border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+  border-top: 2px solid var(--cor-2);
+}
+
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-p1);
+}
+
+.depoimento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: end;
+  background: url(img/dec/top-left-p.svg) no-repeat top 40px left 40px,
+    url(img/dec/bottom-right-p.svg) no-repeat bottom 40px right 40px;
+}
+
+.conteudo {
+  margin-top: auto;
+  color: var(--cor-p5);
+  font: 600 1.69rem/1.25 "Merriweather", sans-serif;
+}
+
+.depoimento-conteudo p {
+  font-style: italic;
+  font-family: "Merriweather";
+  font-weight: 900;
+  max-width: 32ch;
+  position: relative;
+  z-index: 0;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.depoimento p::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+  color: var(--cor-p2);
+  font-size: 5rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.depoimento p::after {
+  content: "”";
+  bottom: -60px;
+  color: var(--cor-p2);
+  font-size: 5rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.depoimento-conteudo span {
+  color: var(--cor-p4);
+  font-weight: 600;
+  font: 500 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.seguro-bg {
+  background: var(--cor-11) url(./img/dec/bottom-left.svg) no-repeat bottom 40px
+    left 20px;
+}
+
+.seguros {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguros h2 {
+  grid-column: 1/-1;
+  color: var(--cor-0);
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.seguros-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 32px 32px 32px 60px;
+  border-radius: 4px;
+  background-color: var(--cor-12);
+}
+.seguros-item h3 {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+  color: var(--cor-6);
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.seguros-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.preco {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+  color: var(--cor-0);
+}
+
+.mensal {
+  font: 500 0.75rem/1.35 "Poppins", sans-serif;
+  color: var(--cor-6);
+}
+
+.seguros-lista {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+  color: var(--cor-0);
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  padding: 0px;
+  list-style: none;
+}
+
+.seguros-lista li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.ouro {
+  color: var(--cor-p1) !important;
+}
+
+.seguros-lista li::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  width: 13px;
+  height: 9px;
+  background-image: url(./img/icones/lista.svg);
+}
+
+.seguros-item a {
+  grid-column: 1/-1;
+}
+
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}

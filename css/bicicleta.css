@@ -1,0 +1,144 @@
+.titulo {
+  background-color: var(--cor-11);
+  padding: 60px 0px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+  color: var(--cor-5);
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  font: 500 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.titulo h1 {
+  color: var(--cor-0);
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+.titulo div {
+  background: url(./img/dec/top-right.svg) no-repeat top right 20px;
+}
+
+@media (max-width: 1200px) {
+  .titulo p {
+    font-size: 1.125rem;
+  }
+  .titulo h1 {
+    font-size: 3rem;
+  }
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(./img/dec/top-right.svg) no-repeat top 40px right 20px;
+}
+
+.bicicletas-imagem {
+  display: grid;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  width: 530px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bicicletas-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0 0 5px;
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+}
+
+.bicicletas h2,
+p {
+  grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.bicicletas p {
+  margin-bottom: 32px;
+  color: var(--cor-8);
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
+  color: var(--cor-8);
+  font: 500 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.bicicletas-conteudo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas a {
+  place-self: end;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(./img/icones/seta.svg);
+  transition: transform 0.2s;
+}
+
+.bicicletas-bg {
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0%
+  );
+}
+
+.bicicletas-bg h2 {
+  color: var(--cor-0);
+}
+
+.bicicletas-bg p {
+  color: var(--cor-5);
+}
